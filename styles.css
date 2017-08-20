@@ -1,7 +1,7 @@
 body{
     font-family: calibri;
 }
-.top-image{
+#top-image{
     background: url("images/topPic.jpg") no-repeat center center;
     background-size:cover;
     height:350px;
@@ -15,11 +15,13 @@ h1{
 h2{
     font-size:35px;
 }
-.top-image .container{
-    position: relative;
-    top:34%;
+
+#top-image .center{
+    max-width: 440px;
+    margin: 0 auto;
+    padding-top:70px; 
 }
-.top-image h1, .top-image h2 {
+#top-image h1, #top-image h2 {
     color: #ffffff;
     text-shadow: -4px 2px 13px black;
     text-align: left;
@@ -30,8 +32,8 @@ h2{
     background-size: 220px 65px;
     height: 65px;
     width: 52px;
-    float: right;
     background-position: 0 0;
+    margin-top: 20px;
 }
 
 hr{
@@ -46,14 +48,24 @@ hr{
     font-size: 25px;
     line-height: 50px;
     font-weight: bold;
+    margin:15px 0px;
 }
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #525656;
+}
+@media all and (max-width: 641px) {
+   h1{
+       font-size:35px;
+   }
+   h2{
+       font-size:25px;
+   }
+  }
 /* logo color :#41BA9D */
 /****************** navbar ********************************/
-  .nav {
-    flex-direction: row;
-    justify-content: center;
-    background-color:#eee;
-  }
+
   .logo-link{
     background: url(images/logo.png) no-repeat center center;
     background-size: 113px 25px;
@@ -62,10 +74,40 @@ hr{
     display: block;
     background-position: 0 0;
   }
-  
-  @media all and (max-width: 550px) {
-    .nav {
-      flex-direction: column;
-    }
+  .navbar-header .logo-link{
+      margin-top: 13px;
+      margin-left: 20px;
+      cursor: pointer;
+  }
+
+  .collapse ul li>div{
+    width: 100%;
+    cursor: pointer;
+    line-height: 48px;
+    font-size: 16px;
+    margin-left: 20px;
+  }
+  .nav-wrapper{
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
   }
   /****************** end navbar********************************/
+  /************************about us**********************************/
+  .group-pic{
+    background: url(images/group.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 262px;
+  }
+  /******************** Conact us **************************************/
+  form{
+      background-color: #41BA9D;
+      padding:15px 0;
+  }
+  .contac-bg-pic{
+    background: url("images/fadePic.jpg") no-repeat center center;
+    background-size:cover;
+    height:350px;
+  }
