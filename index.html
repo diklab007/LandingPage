@@ -1,6 +1,7 @@
 <!doctype html>
-<html >
+<html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Hope reahb center</title>
     <!-- angular 1.6.5 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
@@ -12,9 +13,53 @@
     <!-- bootstrap-UI -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>        
     <!-- my script -->
-    <script src="app.js"></script>        
+    <script src="app.js"></script>
+    <!-- my styles -->
+    <link rel="stylesheet" href="styles.css">    
   </head>
-  <body ng-app="myApp" >
+  <body ng-app="myApp" > 
+    <!-- NAV TABS  -->
+    <ul class="nav">
+        <li class="nav-item">
+            <div class="nav-link"><a class="logo-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+        </ul>
+    <!-- END NAV TABS -->
+    <!-- TOP IMAGE AND LOGO -->
+    <div class="top-image">
+        <div class="container">
+            <div class ="row">
+                <div class="col-4">
+                    <div class="logo">
+                    </div>
+                </div>
+                <div class="col-8"> 
+                    <h1>Hope Rehab Center</h1>
+                   <h2>Helps you get a new start</h2>
+                </div>
+            <hr>
+            </div>
+           
+         </div>
+      </div>
+      <!-- about-us-->
+    <div class="about-us">
+        <div class="title">About Us</div>
+            <div class="container">
+                <div class ="row">
+                </div>
+               </div>
+          </div>
+      <!-- END about Us -->
       <div ng-controller="landingPageController">
           hi {{name}}
       </div>

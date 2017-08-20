@@ -1,0 +1,71 @@
+body{
+    font-family: calibri;
+}
+.top-image{
+    background: url("images/topPic.jpg") no-repeat center center;
+    background-size:cover;
+    height:350px;
+    position: relative;
+}
+
+h1{
+    font-size:40px;
+    font-weight: bold;
+}
+h2{
+    font-size:35px;
+}
+.top-image .container{
+    position: relative;
+    top:34%;
+}
+.top-image h1, .top-image h2 {
+    color: #ffffff;
+    text-shadow: -4px 2px 13px black;
+    text-align: left;
+    position: relative;
+}
+.logo{
+    background: url(images/logo.png) no-repeat center center;
+    background-size: 220px 65px;
+    height: 65px;
+    width: 52px;
+    float: right;
+    background-position: 0 0;
+}
+
+hr{
+    width: 510px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.title{
+    background-color: #fbf8f8;
+    color: #525656;
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: bold;
+}
+/* logo color :#41BA9D */
+/****************** navbar ********************************/
+  .nav {
+    flex-direction: row;
+    justify-content: center;
+    background-color:#eee;
+  }
+  .logo-link{
+    background: url(images/logo.png) no-repeat center center;
+    background-size: 113px 25px;
+    height: 25px;
+    width: 95px;
+    display: block;
+    background-position: 0 0;
+  }
+  
+  @media all and (max-width: 550px) {
+    .nav {
+      flex-direction: column;
+    }
+  }
+  /****************** end navbar********************************/
